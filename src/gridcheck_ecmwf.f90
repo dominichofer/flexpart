@@ -527,7 +527,7 @@ subroutine gridcheck_ecmwf
       call grib_get_int(igrib,'paramId',parId,iret)
       call grib_check(iret,gribFunction,gribErrorMsg)
 
-      !print*,discipl,parCat,parNum,typSurf,valSurf
+      print*,discipl,parCat,parNum,typSurf,valSurf
 
       !convert to grib1 identifiers
       isec1(6)=-1
